@@ -1,9 +1,9 @@
 # DevOps
 
-Cloned From: 
-Author: Fisayo Afolayan
-Blog: https://blog.pusher.com/tests-laravel-applications/
-Link: https://github.com/neoighodaro-articles/e-commerce-laravel-vue.git
+Cloned From: <br>
+Author: Fisayo Afolayan <br>
+Blog: https://blog.pusher.com/tests-laravel-applications/ <br>
+Link: https://github.com/neoighodaro-articles/e-commerce-laravel-vue.git <br>
 
 Programming Language: PHP <br>
 Tools:
