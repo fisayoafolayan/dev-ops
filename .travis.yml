@@ -1,0 +1,32 @@
+# References: https://www.cloudways.com/blog/php-continuous-integration-travis-ci/
+# References: https://docs.travis-ci.com/user/notifications/
+# References: https://gist.github.com/gilbitron/5cac0ac5fa07e9b354ac
+
+os:
+  - windows
+
+language: php
+
+php:
+  - 7.2.10
+
+before_script:
+  - cp .env.travis .env
+  - composer self-update
+  - compose install --no-interaction
+  - npm install
+
+script:
+  - php artisan key:generate
+  - php artisan passport install
+  - php artisan migrate --step
+  - vendor/bin/phpunit
+
+matrix:
+  fast_finish: true
+
+notifications:
+  slack: ittralee:aGvG53DwjXzULD6B07n9Xe8o
+  on_success: always
+  on_failure: always
+  
