@@ -16,7 +16,9 @@ before_script:
 script:
   - php artisan key:generate
   - php artisan passport:install
-  - php artisan migrate --step
+  - php artisan migrate
+  - php artisan db:seed
+  - php artisan migrate --seed --env=testing
   - vendor/bin/phpunit
 
 matrix:
