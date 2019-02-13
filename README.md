@@ -12,4 +12,4 @@ Link: https://github.com/fisayoafolayan/e-commerce-laravel-vue <br>
 Programming Language: PHP <br>
 
 Feedback:
-* GitHub + Slack Integration
+* (https://github.com/integrations/slack)[GitHub + Slack Integration Tutorial]
