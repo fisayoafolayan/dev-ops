@@ -1,11 +1,12 @@
 # References: https://www.cloudways.com/blog/php-continuous-integration-travis-ci/
 # References: https://docs.travis-ci.com/user/notifications/
 # References: https://gist.github.com/gilbitron/5cac0ac5fa07e9b354ac
+# References: https://docs.travis-ci.com/user/sonarcloud/
 
 language: php
 
 php:
-  - 7.2.10
+- 7.2.10
 
 before_script:
   - cp .env.travis .env
@@ -18,12 +19,18 @@ script:
   - php artisan passport:install
   - php artisan migrate
   - vendor/bin/phpunit
+  - sonar-scanner
 
 matrix:
   fast_finish: true
+
+addons:
+  sonarcloud:
+    organization: dejongyeong-github
+    token:
+          secure: VU1O4A+xIhdksJ21gNp8SiPKcJIviS4XUgG+brmrlSNRmpOoJKfasmu84pIy9r39fsTsA+3DznFjobmgMz3JQBB3/b3X+5rS2WV5i1/IwWdVI9yMS2odNOzoyyY1GOcH3HCsmBFb35grmCP6qhjruMEIYv6iEdnPePhyNPICZW/pZVQY8nJknOydRXLYdeKghnY37G2uNKkAexhgUE+/aWB6iOfUYQck3Co/6acrb90i3BVNP3QaLnPZ48EG+c4xPHEzXSBpLAvlJxS7CDNwQDxQV0sErk2PexIidz7SqJ3cDv/xCnwxcASgQHXnKOLn9f8xVdVnOOez0wVwPgQb7k063vl6Fznc2UGm0Q4neUvYUN7y3pU/AS++jN7VxSLvpipevANzgShOj04tY+nMEiWwjz4Ueqk4el2Py23Dpfnfl0TFjE3g06AKrKr6luU6PM17F4FoDUmE4gM3TszMdQ8e5IvjMD3aX1A81e2w4SgcxKmhHPkf9tC//f1f9Gp5aZlBTZHwej2DxAcnwg72Ytienrr8SNR6pvpQ5RE7B5NdcpsDCTXO//5zZbYcnaWvZVeu4SuH53z7eMURUAnlkQOV8VJkcOVPpkzFuJayDcnfbDvURl6ymoSU0XHWFIbgMzsOBrzvGCIx99R4q+K+SpZlJwtxA8ZCt9XKNF/jneA=
 
 notifications:
   slack: ittralee:aGvG53DwjXzULD6B07n9Xe8o
   on_success: always
   on_failure: always
-  
