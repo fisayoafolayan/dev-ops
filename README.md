@@ -1,6 +1,6 @@
 # DevOps
 
-[![Build Status](https://travis-ci.org/shahroznawaz/php-notifications.svg?branch=master)](https://travis -ci.org/ shahroznawaz/php-notifications)
+[![Build Status](https://travis-ci.org/shahroznawaz/php-notifications.svg?branch=master)]
 
 
 Cloned From: <br>
@@ -13,8 +13,8 @@ Link: https://github.com/fisayoafolayan/e-commerce-laravel-vue <br>
 2. Create database/test.sqlite
 
 <strong>Feedback:</strong>
-* [https://github.com/integrations/slack](GitHub + Slack Integration Tutorial)
+* [GitHub + Slack Integration Tutorial](https://github.com/integrations/slack)
 
 <strong>Continuous Ingeration:</strong>
-* [https://www.cloudways.com/blog/php-continuous-integration-travis-ci/](Travis CI)
-* [https://gist.github.com/gilbitron/5cac0ac5fa07e9b354ac](Script Reference)
+* [Travis CI](https://www.cloudways.com/blog/php-continuous-integration-travis-ci/)
+* [Script Reference](https://gist.github.com/gilbitron/5cac0ac5fa07e9b354ac)

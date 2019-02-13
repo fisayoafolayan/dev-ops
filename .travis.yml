@@ -15,7 +15,7 @@ before_script:
 
 script:
   - php artisan key:generate
-  - php artisan passport install
+  - php artisan passport:install
   - php artisan migrate --step
   - vendor/bin/phpunit
 
