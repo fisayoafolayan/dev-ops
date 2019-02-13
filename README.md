@@ -1,7 +1,6 @@
 # DevOps
 
-![Build Status](https://travis-ci.org/shahroznawaz/php-notifications.svg?branch=master)
-
+[![Build Status](https://travis-ci.org/dejongyeong/dev-ops.svg?branch=master)](https://travis-ci.org/dejongyeong/dev-ops)
 
 Cloned From: <br>
 Author: Fisayo Afolayan <br>
