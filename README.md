@@ -10,4 +10,6 @@ Link: https://github.com/fisayoafolayan/e-commerce-laravel-vue <br>
 2. Create database/test.sqlite
 
 Programming Language: PHP <br>
-Tools:
+
+Feedback:
+* GitHub + Slack Integration
