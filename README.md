@@ -1,6 +1,6 @@
 # DevOps
 
-[![Build Status](https://travis-ci.org/dejongyeong/dev-ops.svg?branch=master)](https://travis-ci.org/dejongyeong/dev-ops)
+[![Build Status](https://travis-ci.org/dejongyeong/dev-ops.svg?branch=master)](https://travis-ci.org/dejongyeong/dev-ops) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=dejongyeong_dev-ops&metric=alert_status)](https://sonarcloud.io/dashboard?id=dejongyeong_dev-ops)
 
 Cloned From: <br>
 Author: Fisayo Afolayan <br>
