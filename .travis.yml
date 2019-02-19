@@ -36,9 +36,7 @@ cache:
 deploy:
   provider: heroku
   api_key:
-    secure: "6545b019-561b-4934-8eb2-4f843f5c0ef6"
-  app:
-    dev-ops
+    secure: "fFfzlw4Ix5Mw9maZDTO3Rz8NZhWkWMKstAUXHHR6LAtWSzPd1K80pt/MyCnLe+OcEZPoL+RYJvt69RG/LSc6nxhByiHULcJ5ej5jcvLJinLbuN04wxzbzCAvfg6Zv3vKyzrcIDPZvYrbqk3djUDb5JB7EpXxmOD8tQObyrBKok//mdJdSHsDwrDFiiMFUeAGa/GG3h87Cc7UjTyzfYazi8Ws8B3ttsHQtTE3ARWvmMh/8ASfxD4cEpkTpAFQP2nwOkZpzu4jDr5DSXjpYSgQrpMbeGEnqAUEb9j6Vv2sgMt1OpB462AJupdb0az90GFp4RD6PET70Cu1vx51buWp4l6tnekFbN1RC2niNPS76+09OF5/Jjy8mYMZwSWfYYIl/QoFC5aLYGCHAp/7c4YrANh2XQ0TQYRJ8lN2hCTna3tTgoMbHKnhbhtYMfZSoH+DYuYWtNC1UzMimr2Th7jcQajM73hkRB6n61H/lwJdVizI7Y0I4CI0xvIhZe1vJe8uUtp8L+rK/dD5i1/MPB0DS7aVB+IWRGItVNJmo5/RoP0lYU3WoXSLZTTrYFIvqTSzpj2NKIGqx4zUYQb1gL4dPdj2mVEvb50H2eQf7VeZridt49dZchwbyxNFHzY/Zq3k9RngVneaKXnzjVzQEtzYfs7VJOUa3UJE+XIh/bGIWK8="
 
 matrix:
   fast_finish: true
