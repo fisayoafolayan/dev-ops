@@ -17,3 +17,6 @@ Link: https://github.com/fisayoafolayan/e-commerce-laravel-vue <br>
 <strong>Continuous Ingeration:</strong>
 * [Travis CI](https://www.cloudways.com/blog/php-continuous-integration-travis-ci/)
 * [Script Reference](https://gist.github.com/gilbitron/5cac0ac5fa07e9b354ac)
+
+<strong>Deployment Server:</strong>
+* Heroku
