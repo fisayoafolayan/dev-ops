@@ -29,6 +29,13 @@ script:
   - vendor/bin/phpunit
   - sonar-scanner
 
+deploy:
+  provider: heroku
+  api_key:
+    secure: "sTw6fXtv45GcE9daQWtdyKbrMOYzbj/LEL8nlMXghTDiXbOfEFwLAg2f/0DvreBZf3RwRAV8BnHuvs0nR85E/NfYWJKR+qGDyvs5M25BRIIW5/xoOlAFcda1fVjhVNjRkEwr9L8uuPRbWYsEWjr7UsZd6gDi7Wn06umuGf7JGH/QUVzylXXGqqiy4+V4vXsGIcV/wAIg6VPPS5HwECF6p7X5hv6MwRS27JBlbnhz2zA7dDsFx8b1IsqAlVuDMASfnKQALs+PzIhVbVZyljmIEwzUldLQImoOPkv0gZeWMnXNZcV1EH6JYOIuiX4lTCJGLoGw1EFAq6FnKD/cW0UqiQC057IoFk41f1pS2B6mrPid79L525a2J6E+PYI5bOw2Kq9RkgYHjP0ZflHVYJjFZ8dn10UZU/ebaSHKRU8kwLvwvxkDoDVx7ZOB733D8kykriwm/9G2v1QgRN0SbYgMqLGh0NJCIyNG5+o2NCC87D9baa4SloECOuh88UeDWTTfOQljhuRTkrzTG077lqFE1IJhwYcx/a+l5Fwz2U6iLKkjYCf4cMqiOQMnFgy0Y5jyduwqTzL/fzFl57QmvWSMmKOX+y1wD+RR1vhMwUSegE4T8egOXLSa4suKfAk8q0UVBrFSbo+BPuqer/Qn8rPP6bP2WkH3tQdyRNto4TheGtE="
+  on:
+    master
+
 matrix:
   fast_finish: true
 
