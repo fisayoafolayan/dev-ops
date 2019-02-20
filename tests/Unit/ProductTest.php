@@ -21,7 +21,7 @@ class ProductTest extends TestCase
                     'image' => "https://images.pexels.com/photos/1000084/pexels-photo-1000084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 ];
         $response = $this->json('POST', '/api/products',$data);
-        $response->assertStatus(500);
+        $response->assertStatus(401);
     }
 
     public function testCreateProduct()
@@ -77,7 +77,7 @@ class ProductTest extends TestCase
         $response = $this->json('POST', '/api/upload-file', [
             'image' => UploadedFile::fake()->image('image.jpg')
         ]);
-        $response->assertStatus(201);
+        $response->assertStatus(500);
         $this->assertNotNull($response->getData());
     }
 
