@@ -23,22 +23,22 @@
     </div>
 </template>
 <script>
-    export default {
-        data(){
-            return {
-                products : []
-            }
-        },
-        mounted(){
-            axios.get("api/products/")
-            .then(response => {
-                this.products = response.data
-            })
-            .catch(error => {
-                console.error(error);
-            })       
-        }
-    }
+    // export default {
+    //     data(){
+    //         return {
+    //             products : []
+    //         }
+    //     },
+    //     mounted(){
+    //         axios.get("api/products/")
+    //         .then(response => {
+    //             this.products = response.data
+    //         })
+    //         .catch(error => {
+    //             console.error(error);
+    //         })       
+    //     }
+    // }
 </script>
 <style scoped>
     .small-text {
