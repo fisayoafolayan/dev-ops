@@ -108,18 +108,8 @@ router.beforeEach((to, from, next) => {
   }
 })
 
-// CORS middleware
-const allowCrossDomain = function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', '*');
-    res.header('Access-Control-Allow-Headers', '*');
-    next();
-}
-
 const app = new Vue({
     el: '#app',
     components: { App },
     router,
 });
-
-app.use(allowCrossDomain)
