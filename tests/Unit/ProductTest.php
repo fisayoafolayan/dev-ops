@@ -22,7 +22,6 @@ class ProductTest extends TestCase
                 ];
         $response = $this->json('POST', '/api/products',$data);
         $response->assertStatus(500);
-        $response->assertJson(['message' => "Unauthenticated."]);
     }
 
     public function testCreateProduct()

@@ -33,9 +33,9 @@ return [
 
     'connections' => [
 
-        'testing' => [
+        'sqlite' => [
             'driver' => 'sqlite',
-            'database' => storage_path().'/test.sqlite',
+            'database' => database_path('database.sqlite'),
             'prefix' => '',
         ],
 
