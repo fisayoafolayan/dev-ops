@@ -15,14 +15,8 @@ php:
 before_script:
   - cp .env.travis .env
   - composer self-update
-  - composer install --prefer-source --no-interaction
+  - composer install --no-interaction
   - npm install
-
-addons:
-  sonarcloud:
-    organization: dejongyeong-github
-    token:
-      secure: "MFTj8c6fheT7q1ePQ3XyGpTh//VOWmMgFKI5oaWqGssPt9RcIxpXPyYkVew2jEcE4w6+hV5Mk95uQ6cZpQRVgPIsbvMCcnUku/KnoZK53w7SltlJAWhQ6hzsYE2PdRoCXZiAHh+1bQA22/wh2+S+QmpQJ/InmrTFBEwZAvIZs6ascLYi024y1OnX7ZpNTJhfcPRfEW4Rp/jK4L+44VqLSv0yXngNYY+5M48vv7NRedGNs64JZeGdPtj4BYlW6wyCl8w1hzHqbbeK+5oRbtp1KSXAAwBGkdFpdGRoSTWvJart8q3txdBNKCmuTW4/8i6zvzEx6YO2k0WvyYBPHTMvsAvXPf+S0KoHewK0TWtqcyMlUelQ7fa5PWa6JlSsPSrJjbKY6il4ok1UZIIf8KYhmFJKTL7Iiu1+hlYasxTW/F9E/oXgGcQBahE6T9lexHfx8UtXNNb+m5c962zDJK5Fw8YQ5G1j/olTIQGOIbs1N/5D50MIP3PSGyZ6EHVEQ7MVKbhnSKYzEJfwdxBurKmNwGjakFWIGxOa1HREIgNuExLERdx+oE6i0aOojda0pg1nUvGQ4nwxmIq/UguNlLIUSJMFSI5WmXEt6iSlYGQhdI9Xup0ZYdc//u6T4yBfs9aXN2anvusZNR+vYeZbftdDpXgzJmyf2H9HNHtIGfc29zA="
 
 script:
   - php artisan key:generate
@@ -34,6 +28,12 @@ script:
 cache:
   directories:
     - $HOME/.composer/cache/files
+
+addons:
+  sonarcloud:
+    organization: dejongyeong-github
+    token:
+      secure: "MFTj8c6fheT7q1ePQ3XyGpTh//VOWmMgFKI5oaWqGssPt9RcIxpXPyYkVew2jEcE4w6+hV5Mk95uQ6cZpQRVgPIsbvMCcnUku/KnoZK53w7SltlJAWhQ6hzsYE2PdRoCXZiAHh+1bQA22/wh2+S+QmpQJ/InmrTFBEwZAvIZs6ascLYi024y1OnX7ZpNTJhfcPRfEW4Rp/jK4L+44VqLSv0yXngNYY+5M48vv7NRedGNs64JZeGdPtj4BYlW6wyCl8w1hzHqbbeK+5oRbtp1KSXAAwBGkdFpdGRoSTWvJart8q3txdBNKCmuTW4/8i6zvzEx6YO2k0WvyYBPHTMvsAvXPf+S0KoHewK0TWtqcyMlUelQ7fa5PWa6JlSsPSrJjbKY6il4ok1UZIIf8KYhmFJKTL7Iiu1+hlYasxTW/F9E/oXgGcQBahE6T9lexHfx8UtXNNb+m5c962zDJK5Fw8YQ5G1j/olTIQGOIbs1N/5D50MIP3PSGyZ6EHVEQ7MVKbhnSKYzEJfwdxBurKmNwGjakFWIGxOa1HREIgNuExLERdx+oE6i0aOojda0pg1nUvGQ4nwxmIq/UguNlLIUSJMFSI5WmXEt6iSlYGQhdI9Xup0ZYdc//u6T4yBfs9aXN2anvusZNR+vYeZbftdDpXgzJmyf2H9HNHtIGfc29zA="
 
 deploy:
   provider: heroku
