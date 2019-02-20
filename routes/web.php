@@ -1,11 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\URL;
-
-if($this->app->environment() == 'production') {
-        URL::forceScheme('https');
-}
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
