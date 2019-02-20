@@ -19,8 +19,6 @@ try {
 
 window.axios = require('axios');
 
-window.axios.defaults.baseURL= 'https://laravel-store-app.herokuapp.com/'
-
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
