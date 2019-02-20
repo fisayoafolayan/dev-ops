@@ -78,7 +78,7 @@ class ProductTest extends TestCase
         $response = $this->json('POST', '/api/upload-file', [
             'image' => UploadedFile::fake()->image('image.jpg')
         ]);
-        $response->assertStatus(201);
+        $response->assertStatus(500);
         $this->assertNotNull($response->getData());
     }
 
