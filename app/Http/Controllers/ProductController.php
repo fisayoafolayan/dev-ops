@@ -40,7 +40,7 @@ class ProductController extends Controller
             $name = time()."_".$request->file('image')->getClientOriginalName();
             $request->file('image')->move(public_path('images'), $name);
         }
-        return response()->json(asset("images/$name"),201);
+        return response()->json(secure_asset("images/$name"),201);
     }
 
     public function update(Request $request, Product $product)

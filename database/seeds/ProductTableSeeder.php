@@ -19,7 +19,7 @@ class ProductTableSeeder extends Seeder
                 tempor incididunt ut labore et dolore magna aliqua consequat.",
     			'units' => 21,
     			'price' => 200.10,
-    			'image' => "https://www.53degreesnorth.ie/media/catalog/product/cache/image/1000x1000/e9c3970ab036de70892d86c6d221abfe/t/h/the-north-face-mens-dryzzle-gore-tex-jacket-tnf-black-aw18.jpg"
+    			'image' => "https://53degreesnorth.ie/media/catalog/product/cache/image/1000x1000/e9c3970ab036de70892d86c6d221abfe/t/h/the-north-face-mens-dryzzle-gore-tex-jacket-tnf-black-aw18.jpg"
     		],
     		[
     			'name' => "WOMEN'S BETTER THAN NAKED&trade; JACKET",
