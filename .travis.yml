@@ -29,10 +29,6 @@ script:
   - vendor/bin/phpunit
   - sonar-scanner
 
-cache:
-  directories:
-    - $HOME/.composer/cache/files
-
 deploy:
   provider: heroku
   api_key:
