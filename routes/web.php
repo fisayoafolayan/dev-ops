@@ -11,6 +11,11 @@
 |
 */
 
+if (App::environment('production')) {
+    URL::forceScheme('https');
+    URL::forceRootUrl('https://laravel-store-app.herokuapp.com/');
+}
+
 Route::get('/{any}', function(){
         return view('landing');
 })->where('any', '.*');
