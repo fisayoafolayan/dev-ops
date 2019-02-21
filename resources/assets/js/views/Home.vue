@@ -32,7 +32,7 @@
         mounted(){
             axios.get("api/products/")
             .then(response => {
-                this.products = response.data
+                this.products = secure_assets(response.data)
             })
             .catch(error => {
                 console.error(error);
