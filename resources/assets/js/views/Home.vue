@@ -30,9 +30,9 @@
             }
         },
         mounted(){
-            axios.get("api/products/")
+            axios.get("https://laravel-store-app.herokuapp.com/api/products/")
             .then(response => {
-                this.products = secure_assets(response.data)
+                this.products = response.data
             })
             .catch(error => {
                 console.error(error);
